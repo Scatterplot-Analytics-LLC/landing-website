@@ -1,10 +1,7 @@
 import React from 'react'
+import { BentoChartProps } from './BentoChart3'
 
-interface BentoChart1Props {
-  color?: string
-  className?: string
-}
-const BentoChart1: React.FC<BentoChart1Props> = ({
+const BentoChart1: React.FC<BentoChartProps> = ({
   color = '#781242',
   className,
 }) => {

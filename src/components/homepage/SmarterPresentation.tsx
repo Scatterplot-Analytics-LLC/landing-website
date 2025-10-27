@@ -30,7 +30,7 @@ const SmarterPresentations: React.FC = () => {
       </div>
 
       {/* Cards Grid */}
-      <BentoComponent />
+      <BentoComponent color='#69b4f9' />
     </div>
   )
 }

@@ -1,7 +1,8 @@
 import React from 'react'
 import AnimatedButton from './AnimatedButton'
-import Image from 'next/image'
 import BentoChart1 from './BentoChart1'
+import BentoChart2 from './BentoChart2'
+import BentoChart3 from './BentoChart3'
 
 interface BentoComponentProps {
   color?: string
@@ -27,13 +28,6 @@ const BentoComponent: React.FC<BentoComponentProps> = ({
           </h3>
           {/* Line Chart Area */}
           <div className='flex flex-1 items-end overflow-hidden'>
-            {/* <Image
-              src='/landing/bento11.svg'
-              alt='Bento Component'
-              width={0}
-              height={0}
-              className='h-auto w-full max-w-sm'
-            /> */}
             <div className='w-full max-w-sm'>
               <BentoChart1 color={color} />
             </div>
@@ -50,24 +44,16 @@ const BentoComponent: React.FC<BentoComponentProps> = ({
           </p>
 
           {/* Main Metrics Card */}
-          <div className='flex flex-1 items-end overflow-hidden'>
-            <Image
-              src='/landing/bento12.svg'
-              alt='Bento Component'
-              width={0}
-              height={0}
-              className='h-auto w-112 max-w-none'
-            />
-          </div>
+          <div className='relative flex flex-1 items-end overflow-hidden'>
+            <div className='w-full max-w-lg'>
+              <BentoChart2 color={color} />
+            </div>
 
-          {/* Small Bar Chart */}
-          {/* <Image
-            src='/landing/bento13.svg'
-            alt='Bento Component'
-            width={0}
-            height={0}
-            className='h-auto w-auto max-w-none'
-          /> */}
+            {/* Small Bar Chart - Overlapping BentoChart2 */}
+            <div className='absolute bottom-10 right-0 hidden lg:block xl:bottom-14'>
+              <BentoChart3 color={color} />
+            </div>
+          </div>
         </div>
 
         {/* Section 3: Bottom-Left - Always On-Brand */}
