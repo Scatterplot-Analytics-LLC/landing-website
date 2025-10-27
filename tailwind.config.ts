@@ -72,6 +72,7 @@ const config: Config = {
         '45': '45%',
         '55': '55%',
         '100px': '100px',
+        '112': '482px',
       },
       height: {
         'screen-200': 'calc(100vh - 200px)',

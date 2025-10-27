@@ -6,6 +6,7 @@ import ValueProposition from '@/src/components/homepage/ValueProposition'
 import ExtraComponent from '@/src/components/homepage/ExtraComponent'
 import ComingSoonBanner from '@/src/components/homepage/ComingSoonBanner'
 import Footer from '@/src/components/homepage/Footer'
+import SmarterPresentation from '@/src/components/homepage/SmarterPresentation'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Header />
       <HeroSection />
       <ValueProposition />
+      <SmarterPresentation />
       <ComingSoonBanner />
       <ExtraComponent />
 
