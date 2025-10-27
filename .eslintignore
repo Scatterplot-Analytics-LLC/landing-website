@@ -1,0 +1,6 @@
+*.css
+*.svg
+/.next
+
+/src/components/ui/*
+/src/hooks/use-toast.ts

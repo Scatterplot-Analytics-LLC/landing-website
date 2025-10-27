@@ -1,0 +1,16 @@
+{
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "semi": false,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["clsx", "cva"],
+  "overrides": [
+    {
+      "files": ["tsconfig.json"],
+      "options": {
+        "parser": "jsonc"
+      }
+    }
+  ]
+}
