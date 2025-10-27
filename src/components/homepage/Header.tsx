@@ -53,7 +53,7 @@ const Header = () => {
           <Button
             variant='outline'
             size='sm'
-            className='border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90'
+            className='border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90 hover:text-palette-210'
           >
             <CircleUser className='h-4 w-4' />
             <span className='text-sm font-medium'>Login</span>
