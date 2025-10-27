@@ -163,7 +163,7 @@ const Footer = () => {
                 With 50+ dynamic charts, customizable decks, your branding — you
                 can cancel anytime.
               </p>
-              <button className='hover:bg-palette-370 mt-3 flex h-12 items-center justify-center rounded-lg bg-palette-360 px-6 py-4 text-base font-medium text-white transition-colors'>
+              <button className='mt-3 flex h-12 items-center justify-center rounded-lg bg-palette-360 px-6 py-4 text-base font-medium text-white transition-colors hover:bg-palette-370'>
                 Start 7-Day Free Trial
               </button>
             </div>
@@ -180,21 +180,21 @@ const Footer = () => {
           {/* Center - Social Icons */}
           <div className='flex items-center gap-6'>
             <a
-              href='#'
+              href='#feature'
               className='h-4 w-4 text-white hover:text-white/80'
               aria-label='Instagram'
             >
               <Instagram className='h-4 w-4' />
             </a>
             <a
-              href='#'
+              href='#feature'
               className='h-4 w-4 text-white hover:text-white/80'
               aria-label='LinkedIn'
             >
               <Linkedin className='h-4 w-4' />
             </a>
             <a
-              href='#'
+              href='#feature'
               className='h-4 w-4 text-white hover:text-white/80'
               aria-label='X'
             >
@@ -205,13 +205,13 @@ const Footer = () => {
           {/* Right - Legal Links */}
           <div className='flex items-center gap-6'>
             <a
-              href='#'
+              href='#feature'
               className='text-xs font-normal text-white/60 hover:text-white/80'
             >
               Privacy Policy
             </a>
             <a
-              href='#'
+              href='#feature'
               className='text-xs font-normal text-white/60 hover:text-white/80'
             >
               Terms & Conditions

@@ -1,5 +1,0 @@
-[00:03:36.963] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/aubergine/Projects/ScatterPlot/landing-website/my-app/src/app'
-[00:03:36.964] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/aubergine/Projects/ScatterPlot/landing-website/my-app/src/app'
-[00:03:37.108] Server  ERROR   Error: ENOENT: no such file or directory, scandir '/Users/aubergine/Projects/ScatterPlot/landing-website/my-app/src/app'
-[00:03:37.115] Server  ERROR    ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, scandir '/Users/aubergine/Projects/ScatterPlot/landing-website/my-app/src/app'
-[00:03:37.116] Server  ERROR    ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, scandir '/Users/aubergine/Projects/ScatterPlot/landing-website/my-app/src/app'
