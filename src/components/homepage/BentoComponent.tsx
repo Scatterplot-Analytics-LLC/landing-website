@@ -13,8 +13,8 @@ interface BentoComponentProps {
 const BentoComponent: React.FC<BentoComponentProps> = ({
   color = '#781242',
 }) => {
-  console.log('color', color);
-  
+  console.log('color', color)
+
   return (
     <div className='mx-auto w-full max-w-7xl'>
       {/* Main Grid Container */}
@@ -79,8 +79,8 @@ const BentoComponent: React.FC<BentoComponentProps> = ({
         </div>
 
         {/* Section 4: Bottom-Right - CTA Section */}
-        <div 
-          className="col-span-4 flex flex-col items-center justify-between rounded-xl px-8 py-6"
+        <div
+          className='col-span-4 flex flex-col items-center justify-between rounded-xl px-8 py-6'
           style={{ backgroundColor: color }}
         >
           <h2 className='text-lg font-normal leading-5 text-white lg:text-2xl lg:leading-8 xl:text-3xl xl:leading-10'>
