@@ -59,10 +59,7 @@ const BrandColorPicker = ({ onColorChange, color }: BrandColorPickerProps) => {
 
       {/* Color Picker */}
       <div className='flex items-center justify-center'>
-        <HexColorPicker
-          color={color}
-          onChange={handleColorChange}
-        />
+        <HexColorPicker color={color} onChange={handleColorChange} />
       </div>
 
       {/* Input Fields */}

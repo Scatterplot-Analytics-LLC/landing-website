@@ -37,7 +37,7 @@ const SmarterPresentations: React.FC = () => {
         <BentoComponent color={color} />
 
         {/* Color Picker Overlay */}
-        <div className='absolute -bottom-40 left-0 2xl:left-20 3xl:left-60 z-20'>
+        <div className='absolute -bottom-40 left-0 z-20 2xl:left-20 3xl:left-60'>
           <BrandColorPicker onColorChange={setColor} color={color} />
         </div>
       </div>
