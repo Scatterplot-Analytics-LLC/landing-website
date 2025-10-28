@@ -14,6 +14,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1700px',
+      },
       colors: {
         ...colors,
 
@@ -77,6 +80,14 @@ const config: Config = {
       height: {
         'screen-200': 'calc(100vh - 200px)',
         '104': '26rem', // 416px
+      },
+      padding: {
+        '15': '3.75rem', // 60px
+        '50': '12.5rem', // 200px
+        '60': '15rem', // 240px
+      },
+      margin: {
+        '60': '15rem', // 240px
       },
       minHeight: {
         '112': '28rem', // 448px

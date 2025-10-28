@@ -19,14 +19,17 @@ const ValueProposition: React.FC = () => {
       id: 'words-animation',
       trigger: '.value-proposition-container',
       start: 'bottom bottom',
-      end: '+=600%',
+      end: '+=400%',
       scrub: 5,
       pin: '.value-proposition-container',
       // markers: true,
       onUpdate: (self) => {
         // Calculate which word should be highlighted based on scroll progress
         const { progress } = self
-        const currentWordIndex = Math.floor(progress * wordSpans.length)
+        const currentWordIndex =
+          Math.floor(progress * wordSpans.length) < 21
+            ? Math.floor(progress * wordSpans.length)
+            : 20
 
         // Reset all words to gray
         wordSpans.forEach((wordSpan) => {

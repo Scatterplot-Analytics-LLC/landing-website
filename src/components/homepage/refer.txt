@@ -1,0 +1,346 @@
+<div style={{alignSelf: 'stretch', paddingTop: 100, paddingBottom: 200, paddingLeft: 60, paddingRight: 60, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 80, display: 'inline-flex'}}>
+  <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 16, display: 'flex'}}>
+    <div style={{justifyContent: 'center', alignItems: 'center', gap: 12, display: 'inline-flex'}}>
+      <div style={{width: 0.01, height: 14.04, transform: 'rotate(57deg)', transformOrigin: 'top left', outline: '2.50px var(--color-azure-27, #374151) solid', outlineOffset: '-1.25px'}} />
+      <div style={{width: 0.01, height: 14.04, transform: 'rotate(57deg)', transformOrigin: 'top left', outline: '2.50px var(--color-azure-27, #374151) solid', outlineOffset: '-1.25px'}} />
+      <div style={{textAlign: 'center', color: '#374151', fontSize: 20, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 20, letterSpacing: 0.40, wordWrap: 'break-word'}}>How it works</div>
+      <div style={{width: 0.01, height: 14.04, transform: 'rotate(57deg)', transformOrigin: 'top left', outline: '2.50px var(--color-azure-27, #374151) solid', outlineOffset: '-1.25px'}} />
+      <div style={{width: 0.01, height: 14.04, transform: 'rotate(57deg)', transformOrigin: 'top left', outline: '2.50px var(--color-azure-27, #374151) solid', outlineOffset: '-1.25px'}} />
+    </div>
+    <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 12, display: 'flex'}}>
+      <div style={{width: 869.10, textAlign: 'center', color: 'var(--color-azure-27, #374151)', fontSize: 60, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 68, wordWrap: 'break-word'}}>Simplify Prep,       Maximize Client Impact</div>
+      <div style={{width: 766.23, textAlign: 'center', color: 'var(--color-azure-27, #374151)', fontSize: 24, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 32, wordWrap: 'break-word'}}>From picking a template to presenting your insights—just 3 simple steps to create polished, data-rich decks that win client confidence.</div>
+    </div>
+  </div>
+  <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 24, display: 'inline-flex'}}>
+    <div style={{width: 488, alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 28, display: 'inline-flex'}}>
+      <div style={{alignSelf: 'stretch', paddingLeft: 28, paddingRight: 28, paddingTop: 32, paddingBottom: 32, position: 'relative', borderLeft: '4px var(--color-azure-65, #9CA3AF) solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+        <div style={{alignSelf: 'stretch', color: 'var(--color-azure-27, #374151)', fontSize: 32, fontFamily: 'Archivo', fontWeight: '500', lineHeight: 41.60, wordWrap: 'break-word'}}>Choose Your Template</div>
+        <div style={{alignSelf: 'stretch', color: 'var(--color-azure-27, #374151)', fontSize: 20, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 32, wordWrap: 'break-word'}}>Choose from a library of expertly crafted slides, fully branded with your logo. Each slide is designed to make investment concepts easy         to explain.</div>
+      </div>
+      <div style={{alignSelf: 'stretch', paddingLeft: 28, paddingRight: 28, paddingTop: 32, paddingBottom: 32, borderLeft: '4px var(--color-azure-65, #9CA3AF) solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+        <div style={{alignSelf: 'stretch', color: 'var(--color-azure-65, #9CA3AF)', fontSize: 32, fontFamily: 'Archivo', fontWeight: '500', lineHeight: 41.60, wordWrap: 'break-word'}}>Preview & Add to Deck</div>
+      </div>
+      <div style={{alignSelf: 'stretch', paddingLeft: 28, paddingRight: 28, paddingTop: 32, paddingBottom: 32, borderLeft: '4px var(--color-azure-65, #9CA3AF) solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'flex'}}>
+        <div style={{alignSelf: 'stretch', color: 'var(--color-azure-65, #9CA3AF)', fontSize: 32, fontFamily: 'Archivo', fontWeight: '500', lineHeight: 41.60, wordWrap: 'break-word'}}>Present with Confidence</div>
+      </div>
+    </div>
+    <div style={{flex: '1 1 0', height: 667, position: 'relative', background: '#F9F1F4', overflow: 'hidden', borderRadius: 12, outline: '1px #F1F5F9 solid', outlineOffset: '-1px'}}>
+      <div style={{width: 639.38, height: 622.48, left: 128.25, top: -101.66, position: 'absolute', background: '#F6C9DA', boxShadow: '300px 300px 300px ', borderRadius: 9999, filter: 'blur(150px)'}} />
+      <div style={{width: 369.16, height: 359.40, left: -89.35, top: 487.30, position: 'absolute', background: '#F6C9DA', boxShadow: '300px 300px 300px ', borderRadius: 9999, filter: 'blur(150px)'}} />
+      <div style={{width: 995.22, height: 620.14, left: 151.75, top: 95, position: 'absolute', background: 'var(--color-white-solid, white)', overflow: 'hidden', borderRadius: 12, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+        <div style={{alignSelf: 'stretch', minHeight: 620.14, background: '#F1F5F9', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+          <div style={{width: 1367.66, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+            <div style={{alignSelf: 'stretch', height: 70.28, paddingLeft: 37.99, paddingRight: 37.99, paddingTop: 11.40, paddingBottom: 11.40, background: 'var(--color-white-solid, white)', borderBottom: '0.95px var(--color-grey-91, #E5E7EB) solid', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', display: 'flex'}}>
+              <div style={{alignSelf: 'stretch', justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
+                <div style={{width: 718.97, justifyContent: 'flex-start', alignItems: 'center', gap: 7.60, display: 'flex'}}>
+                  <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 4.58, display: 'flex'}}>
+                    <div style={{width: 16.79, height: 13.86, background: 'rgba(121, 17, 66, 0.38)', borderRadius: 0.58}} />
+                    <div style={{width: 9.71, height: 8.73, background: '#791142'}} />
+                    <div style={{width: 16.79, height: 13.86, background: 'rgba(121, 17, 66, 0.38)', borderRadius: 0.58}} />
+                    <div style={{width: 11.84, height: 10.26, background: '#791142'}} />
+                    <div style={{color: '#791142', fontSize: 20.61, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 30.92, wordWrap: 'break-word'}}>Scatterplot</div>
+                  </div>
+                  <div style={{paddingLeft: 3.80, paddingRight: 3.80, justifyContent: 'center', alignItems: 'center', gap: 9.50, display: 'flex'}}>
+                    <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-11, #111827)', fontSize: 19, fontFamily: 'Archivo', fontWeight: '500', lineHeight: 30.39, wordWrap: 'break-word'}}>Workspace</div>
+                  </div>
+                  <div style={{paddingLeft: 3.80, paddingRight: 3.80, justifyContent: 'center', alignItems: 'center', gap: 9.50, display: 'flex'}}>
+                    <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-34, #4B5563)', fontSize: 19, fontFamily: 'Archivo', fontWeight: '300', lineHeight: 30.39, wordWrap: 'break-word'}}>Untitled_deck</div>
+                    <div style={{width: 22.79, height: 22.79, background: '#F7F8F8', borderRadius: 1.90, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+                      <div style={{width: 15.20, height: 15.20, position: 'relative', overflow: 'hidden'}}>
+                        <div style={{width: 7.60, height: 7.60, left: 3.80, top: 3.80, position: 'absolute', outline: '1.14px var(--color-azure-34, #4B5563) solid', outlineOffset: '-0.57px'}} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style={{justifyContent: 'flex-start', alignItems: 'center', display: 'flex'}}>
+                  <div style={{width: 45.59, height: 30.39, paddingLeft: 15.20, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+                    <div data-:hover="false" data-variant="2" style={{width: 30.39, height: 30.39, borderRadius: 9496.68, justifyContent: 'center', alignItems: 'center', display: 'inline-flex'}}>
+                      <div style={{width: 30.39, height: 30.39, background: '#F1F5F9', borderRadius: 9496.68, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+                        <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                          <div style={{textAlign: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-27, #374151)', fontSize: 14, fontFamily: 'Archivo', fontWeight: '500', lineHeight: 20, wordWrap: 'break-word'}}>J</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{alignSelf: 'stretch', paddingRight: 27.56, position: 'relative', borderTop: '0.69px var(--color-grey-91, #E5E7EB) solid', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 27.56, display: 'inline-flex'}}>
+            <div style={{width: 388, paddingTop: 17.63, background: 'var(--color-white-solid, white)', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 17.63, display: 'inline-flex'}}>
+              <div style={{alignSelf: 'stretch', height: 50, paddingBottom: 20.59, paddingLeft: 30, paddingRight: 27.45, borderBottom: '0.86px var(--color-grey-91, #E5E7EB) solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 13.72, display: 'flex'}}>
+                <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10.29, display: 'inline-flex'}}>
+                  <div style={{width: 286, height: 34, position: 'relative', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+                    <div style={{alignSelf: 'stretch', height: 34.31, position: 'relative', background: 'var(--color-white-solid, white)', overflow: 'hidden', borderRadius: 1.72, outline: '0.86px var(--color-grey-91, #E5E7EB) solid', outlineOffset: '-0.86px'}}>
+                      <div data-:hover="false" data-variant="6" style={{height: 13.30, paddingRight: 334.85, left: 35.17, top: 10.42, position: 'absolute', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+                        <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-47, #64748B)', fontSize: 14, fontFamily: 'Archivo', fontWeight: '400', wordWrap: 'break-word'}}>Search slides...</div>
+                      </div>
+                      <div style={{width: 416.43, height: 13.30, left: 35.17, top: 10.51, position: 'absolute'}} />
+                    </div>
+                    <div data-variant="137" style={{width: 13.72, height: 13.72, left: 10.29, top: 10.29, position: 'absolute'}}>
+                      <div style={{width: 9.15, height: 9.15, left: 1.72, top: 1.72, position: 'absolute', outline: '1.14px var(--color-azure-65, #9CA3AF) solid', outlineOffset: '-0.57px'}} />
+                      <div style={{width: 2.46, height: 2.46, left: 9.55, top: 9.55, position: 'absolute', outline: '1.14px var(--color-azure-65, #9CA3AF) solid', outlineOffset: '-0.57px'}} />
+                    </div>
+                  </div>
+                  <div style={{width: 35.17, height: 34.31, paddingLeft: 14.58, paddingRight: 14.58, paddingTop: 7.72, paddingBottom: 7.72, background: 'white', borderRadius: 1.72, outline: '0.86px #E2E8F0 solid', outlineOffset: '-0.86px', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+                    <div style={{width: 13.72, height: 13.72, position: 'relative', overflow: 'hidden'}}>
+                      <div style={{width: 11.44, height: 10.87, left: 1.14, top: 1.72, position: 'absolute', outline: '1.03px var(--color-azure-11, #111827) solid', outlineOffset: '-0.51px'}} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style={{paddingTop: 4, paddingBottom: 8.82, paddingLeft: 30, paddingRight: 23.51, overflow: 'hidden', borderBottom: '0.73px var(--color-grey-91, #E5E7EB) solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 11.76, display: 'flex'}}>
+                <div style={{alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 11.76, display: 'flex'}}>
+                  <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 17.63, display: 'flex'}}>
+                    <div style={{width: 334, height: 232, paddingTop: 12.15, background: 'white', borderRadius: 12, outline: '0.42px #D3D3D3 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                      <div style={{alignSelf: 'stretch', paddingLeft: 17.22, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10.13, display: 'flex'}}>
+                        <div data-:hover="false" data-variant="1" style={{paddingLeft: 6.67, paddingRight: 6.67, paddingTop: 3.33, paddingBottom: 3.33, background: '#FBE5EE', borderRadius: 5, justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                          <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: '#791142', fontSize: 12, fontFamily: 'Archivo', fontWeight: '600', lineHeight: 16, wordWrap: 'break-word'}}>Prospective</div>
+                        </div>
+                      </div>
+                      <div style={{width: 334, height: 156, position: 'relative', overflow: 'hidden'}}>
+                        <div style={{left: 14.32, top: 14.37, position: 'absolute', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                          <div style={{width: 301.59, height: 150.14, justifyContent: 'center', alignItems: 'center', gap: 2.96, display: 'inline-flex'}}>
+                            <div style={{width: 273.50, height: 0, transform: 'rotate(90deg)', transformOrigin: 'top left', outline: '1.11px black solid', outlineOffset: '-0.55px'}}></div>
+                          </div>
+                          <div style={{width: 304.19, height: 104.49, background: 'linear-gradient(159deg, #E6E5FB 0%, #FEFDFF 100%)'}} />
+                          <div style={{width: 302.68, height: 102.86, background: 'linear-gradient(159deg, #E6E5FB 0%, #FEFDFF 100%)'}} />
+                          <div style={{width: 302.70, height: 88.99, outline: '2.22px #E10175 solid', outlineOffset: '-1.11px'}} />
+                          <div style={{width: 5.91, height: 85.35, background: 'white', outline: '2.22px #E7318F solid'}} />
+                          <div style={{left: 0.18, top: 0, position: 'absolute', justifyContent: 'flex-start', alignItems: 'center', gap: 2.96, display: 'inline-flex'}}>
+                            <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 17.74, display: 'inline-flex'}}>
+                              <div style={{color: '#464646', fontSize: 7.39, fontFamily: 'Inter', fontWeight: '500', lineHeight: 10.35, wordWrap: 'break-word'}}>$1000</div>
+                              <div style={{color: '#464646', fontSize: 7.39, fontFamily: 'Inter', fontWeight: '500', lineHeight: 10.35, wordWrap: 'break-word'}}>$500</div>
+                              <div style={{color: '#464646', fontSize: 7.39, fontFamily: 'Inter', fontWeight: '500', lineHeight: 10.35, wordWrap: 'break-word'}}>$200</div>
+                              <div style={{color: '#464646', fontSize: 7.39, fontFamily: 'Inter', fontWeight: '500', lineHeight: 10.35, wordWrap: 'break-word'}}>$100</div>
+                            </div>
+                            <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 28.09, display: 'inline-flex'}}>
+                              <div style={{width: 278.68, height: 0, left: 0, top: 0, position: 'absolute', outline: '0.37px #F2F2F2 solid', outlineOffset: '-0.18px'}}></div>
+                              <div style={{width: 278.68, height: 0, left: 0, top: 0, position: 'absolute', outline: '0.37px #F2F2F2 solid', outlineOffset: '-0.18px'}}></div>
+                              <div style={{width: 278.68, height: 0, left: 0, top: 0, position: 'absolute', outline: '0.37px #F2F2F2 solid', outlineOffset: '-0.18px'}}></div>
+                              <div style={{width: 278.68, height: 0, left: 0, top: 0, position: 'absolute', outline: '0.37px #F2F2F2 solid', outlineOffset: '-0.18px'}}></div>
+                            </div>
+                          </div>
+                          <div style={{paddingTop: 5.63, paddingBottom: 8.44, paddingLeft: 9.14, paddingRight: 8.44, left: 121.23, top: 10.19, position: 'absolute', background: '#F9F9F9', boxShadow: '0px 1.4068679809570312px 2.8137359619140625px rgba(0, 0, 0, 0.04)', borderRadius: 5.63, outline: '0.70px #F5F5F5 solid', outlineOffset: '-0.70px', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 5, display: 'flex'}}>
+                            <div style={{width: 37.90, height: 4.03, background: '#CECECE', borderRadius: 4}} />
+                            <div style={{width: 110, justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
+                              <div style={{width: 57.21, height: 7.45, background: '#A5A5A5', borderRadius: 4}} />
+                              <div style={{height: 14, paddingLeft: 2.81, paddingRight: 2.81, paddingTop: 1.41, paddingBottom: 1.41, background: '#E0F0E4', borderRadius: 2.81, justifyContent: 'center', alignItems: 'center', gap: 7.03, display: 'flex'}}>
+                                <div style={{width: 37.90, height: 4.03, background: '#156A1C', borderRadius: 4}} />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style={{alignSelf: 'stretch', padding: 13.33, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'flex'}}>
+                        <div style={{alignSelf: 'stretch', justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
+                          <div style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 3.33, display: 'inline-flex'}}>
+                            <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-11, #111827)', fontSize: 12.15, fontFamily: 'Archivo', fontWeight: '700', lineHeight: 16.66, wordWrap: 'break-word'}}>Investment Philosophy</div>
+                          </div>
+                          <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+                            <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-grey-46, #6B7280)', fontSize: 10, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 13.33, wordWrap: 'break-word'}}>Updated 5 days ago</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style={{width: 334, height: 232, paddingTop: 12.15, background: 'white', borderRadius: 12, outline: '3px #A60F56 solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                      <div style={{alignSelf: 'stretch', paddingLeft: 17.22, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10.13, display: 'flex'}}>
+                        <div data-:hover="false" data-variant="1" style={{paddingLeft: 6.67, paddingRight: 6.67, paddingTop: 3.33, paddingBottom: 3.33, background: '#FBE5EE', borderRadius: 5, justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                          <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: '#791142', fontSize: 12, fontFamily: 'Archivo', fontWeight: '600', lineHeight: 16, wordWrap: 'break-word'}}>Prospective</div>
+                        </div>
+                      </div>
+                      <div style={{width: 334, height: 156, position: 'relative', overflow: 'hidden'}}>
+                        <div style={{width: 334.18, padding: 19.73, left: 0.06, top: 19.49, position: 'absolute', background: 'white', borderRadius: 11.27, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 20.44, display: 'inline-flex'}}>
+                          <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 21.14, display: 'flex'}}>
+                            <div style={{height: 100.44, justifyContent: 'flex-start', alignItems: 'center', gap: 5.64, display: 'inline-flex'}}>
+                              <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 20.44, display: 'inline-flex'}}>
+                                <div style={{color: '#464646', fontSize: 7.05, fontFamily: 'Inter', fontWeight: '500', lineHeight: 9.87, wordWrap: 'break-word'}}>$1000</div>
+                                <div style={{color: '#464646', fontSize: 7.05, fontFamily: 'Inter', fontWeight: '500', lineHeight: 9.87, wordWrap: 'break-word'}}>$500</div>
+                                <div style={{color: '#464646', fontSize: 7.05, fontFamily: 'Inter', fontWeight: '500', lineHeight: 9.87, wordWrap: 'break-word'}}>$200</div>
+                                <div style={{color: '#464646', fontSize: 7.05, fontFamily: 'Inter', fontWeight: '500', lineHeight: 9.87, wordWrap: 'break-word'}}>$0</div>
+                              </div>
+                              <div style={{width: 298.78, height: 91.61, position: 'relative'}}>
+                                <div style={{left: 0, top: 0, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 29.60, display: 'inline-flex'}}>
+                                  <div style={{width: 298.78, height: 0.70, position: 'relative'}}>
+                                    <div style={{width: 298.78, height: 0, left: 0, top: 0.70, position: 'absolute', opacity: 0.40, outline: '0.35px #BEBEBE solid', outlineOffset: '-0.18px'}}></div>
+                                  </div>
+                                  <div style={{width: 298.78, height: 0.70, position: 'relative'}}>
+                                    <div style={{width: 298.78, height: 0, left: 0, top: 0.70, position: 'absolute', opacity: 0.40, outline: '0.35px #BEBEBE solid', outlineOffset: '-0.18px'}}></div>
+                                  </div>
+                                  <div style={{width: 298.78, height: 0.70, position: 'relative'}}>
+                                    <div style={{width: 298.78, height: 0, left: 0, top: 0.70, position: 'absolute', opacity: 0.40, outline: '0.35px #BEBEBE solid', outlineOffset: '-0.18px'}}></div>
+                                  </div>
+                                  <div style={{width: 298.78, height: 0.70, position: 'relative'}}>
+                                    <div style={{width: 298.78, height: 0, left: 0, top: 0.70, position: 'absolute', opacity: 0.40, outline: '0.35px #BEBEBE solid', outlineOffset: '-0.18px'}}></div>
+                                  </div>
+                                </div>
+                                <div style={{height: 91.80, left: 15.89, top: 0.29, position: 'absolute', justifyContent: 'flex-start', alignItems: 'flex-end', gap: 14.09, display: 'inline-flex'}}>
+                                  <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                    <div style={{width: 18.36, height: 55.08, left: 0.51, top: 43.58, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 2.82}} />
+                                  </div>
+                                  <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                                    <div style={{width: 19.44, height: 68.04, left: -0.21, top: -29.28, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 2.82}} />
+                                  </div>
+                                  <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                    <div style={{width: 19.03, height: 50.03, left: 0, top: 24.66, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 2.82}} />
+                                  </div>
+                                  <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                    <div style={{width: 18.36, height: 36.72, left: 0.51, top: 25.29, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 2.82}} />
+                                  </div>
+                                  <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                    <div style={{width: 19.03, height: 22.55, left: 0, top: 76.81, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 2.82}} />
+                                  </div>
+                                  <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                                    <div style={{width: 19.03, height: 81.04, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 2.82}} />
+                                  </div>
+                                  <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                    <div style={{width: 19.03, height: 59.90, left: 0, top: 21.14, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 2.82}} />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div style={{alignSelf: 'stretch', padding: 13.33, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'flex'}}>
+                        <div style={{alignSelf: 'stretch', justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
+                          <div style={{flex: '1 1 0', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 3.33, display: 'inline-flex'}}>
+                            <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-11, #111827)', fontSize: 12.15, fontFamily: 'Archivo', fontWeight: '700', lineHeight: 16.66, wordWrap: 'break-word'}}>Investment Philosophy</div>
+                          </div>
+                          <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+                            <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-grey-46, #6B7280)', fontSize: 10, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 13.33, wordWrap: 'break-word'}}>Updated 5 days ago</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style={{alignSelf: 'stretch', justifyContent: 'center', alignItems: 'flex-start', display: 'inline-flex'}}>
+                  <div data-:hover="false" data-variant="6" style={{height: 26.45, paddingLeft: 8.82, paddingRight: 8.82, borderRadius: 1.47, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex'}}>
+                    <div style={{textAlign: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column', color: '#781142', fontSize: 14, fontFamily: 'Archivo', fontWeight: '500', lineHeight: 20, wordWrap: 'break-word'}}>Load more</div>
+                    <div style={{width: 14.69, height: 11.76, paddingLeft: 2.94, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+                      <div style={{width: 11.76, height: 11.76, overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+                        <div data-variant="36" style={{width: 11.76, flex: '1 1 0', position: 'relative'}}>
+                          <div style={{width: 2.94, height: 5.88, left: 4.41, top: 2.94, position: 'absolute', outline: '0.98px #781142 solid', outlineOffset: '-0.49px'}} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{width: 534, paddingTop: 16.54, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+              <div style={{alignSelf: 'stretch', paddingBottom: 16.54, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 16, display: 'flex'}}>
+                <div data-:hover="false" data-variant="1" style={{paddingLeft: 9.89, paddingRight: 9.89, paddingTop: 4.94, paddingBottom: 4.94, background: '#FBE5EE', borderRadius: 7.42, justifyContent: 'flex-start', alignItems: 'center', display: 'inline-flex'}}>
+                  <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: '#791142', fontSize: 12, fontFamily: 'Archivo', fontWeight: '600', lineHeight: 16, wordWrap: 'break-word'}}>Prospective</div>
+                </div>
+                <div style={{alignSelf: 'stretch', justifyContent: 'space-between', alignItems: 'flex-end', display: 'inline-flex'}}>
+                  <div style={{width: 331.10, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8, display: 'inline-flex'}}>
+                    <div style={{width: 502.33, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                      <div style={{alignSelf: 'stretch', justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-11, #111827)', fontSize: 23.16, fontFamily: 'Archivo', fontWeight: '600', lineHeight: 27.79, wordWrap: 'break-word'}}>Investment Philosophy</div>
+                    </div>
+                    <div style={{width: 213.61, height: 7.45, background: '#A5A5A5', borderRadius: 4}} />
+                  </div>
+                  <div style={{justifyContent: 'flex-start', alignItems: 'center', gap: 15.15, display: 'flex'}}>
+                    <div data-:hover="false" data-variant="1" style={{height: 40.40, paddingLeft: 16.16, paddingRight: 16.16, paddingTop: 8.08, paddingBottom: 8.08, background: '#791142', borderRadius: 2.02, justifyContent: 'center', alignItems: 'center', gap: 8, display: 'flex'}}>
+                      <div style={{height: 16.16, paddingRight: 4.04, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'inline-flex'}}>
+                        <div style={{width: 16.16, height: 16.16, overflow: 'hidden', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+                          <div data-variant="1" style={{width: 16.16, flex: '1 1 0', position: 'relative'}} />
+                        </div>
+                      </div>
+                      <div style={{textAlign: 'center', justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-grey-98, #F9FAFB)', fontSize: 14, fontFamily: 'Archivo', fontWeight: '500', lineHeight: 20, wordWrap: 'break-word'}}>Add to Deck</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style={{alignSelf: 'stretch', overflow: 'hidden', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 16, display: 'flex'}}>
+                <div style={{width: 646, height: 283, position: 'relative', background: 'var(--color-white-solid, white)', overflow: 'hidden', borderRadius: 4.42, outline: '0.55px var(--color-grey-91, #E5E7EB) solid', outlineOffset: '-0.55px'}}>
+                  <div style={{width: 606.25, height: 283.16, left: -10.56, top: 0, position: 'absolute', overflow: 'hidden'}}>
+                    <div style={{width: 606.57, padding: 35.81, left: 0.11, top: 35.37, position: 'absolute', background: 'white', borderRadius: 20.47, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 37.09, display: 'inline-flex'}}>
+                      <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 38.37, display: 'flex'}}>
+                        <div style={{height: 182.31, justifyContent: 'flex-start', alignItems: 'center', gap: 10.23, display: 'inline-flex'}}>
+                          <div style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 37.09, display: 'inline-flex'}}>
+                            <div style={{color: '#464646', fontSize: 12.79, fontFamily: 'Inter', fontWeight: '500', lineHeight: 17.91, wordWrap: 'break-word'}}>$1000</div>
+                            <div style={{color: '#464646', fontSize: 12.79, fontFamily: 'Inter', fontWeight: '500', lineHeight: 17.91, wordWrap: 'break-word'}}>$500</div>
+                            <div style={{color: '#464646', fontSize: 12.79, fontFamily: 'Inter', fontWeight: '500', lineHeight: 17.91, wordWrap: 'break-word'}}>$200</div>
+                            <div style={{color: '#464646', fontSize: 12.79, fontFamily: 'Inter', fontWeight: '500', lineHeight: 17.91, wordWrap: 'break-word'}}>$0</div>
+                          </div>
+                          <div style={{width: 542.33, height: 166.28, position: 'relative'}}>
+                            <div style={{left: 0, top: 0, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 53.72, display: 'inline-flex'}}>
+                              <div style={{width: 542.33, height: 1.28, position: 'relative'}}>
+                                <div style={{width: 542.33, height: 0, left: 0, top: 1.28, position: 'absolute', opacity: 0.40, outline: '0.64px #BEBEBE solid', outlineOffset: '-0.32px'}}></div>
+                              </div>
+                              <div style={{width: 542.33, height: 1.28, position: 'relative'}}>
+                                <div style={{width: 542.33, height: 0, left: 0, top: 1.28, position: 'absolute', opacity: 0.40, outline: '0.64px #BEBEBE solid', outlineOffset: '-0.32px'}}></div>
+                              </div>
+                              <div style={{width: 542.33, height: 1.28, position: 'relative'}}>
+                                <div style={{width: 542.33, height: 0, left: 0, top: 1.28, position: 'absolute', opacity: 0.40, outline: '0.64px #BEBEBE solid', outlineOffset: '-0.32px'}}></div>
+                              </div>
+                              <div style={{width: 542.33, height: 1.28, position: 'relative'}}>
+                                <div style={{width: 542.33, height: 0, left: 0, top: 1.28, position: 'absolute', opacity: 0.40, outline: '0.64px #BEBEBE solid', outlineOffset: '-0.32px'}}></div>
+                              </div>
+                            </div>
+                            <div style={{height: 166.63, left: 28.84, top: 0.53, position: 'absolute', justifyContent: 'flex-start', alignItems: 'flex-end', gap: 25.58, display: 'inline-flex'}}>
+                              <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                <div style={{width: 33.33, height: 99.98, left: 0.92, top: 79.09, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 5.12}} />
+                              </div>
+                              <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                                <div style={{width: 35.29, height: 123.50, left: -0.38, top: -53.15, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 5.12}} />
+                              </div>
+                              <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                <div style={{width: 34.53, height: 90.81, left: 0, top: 44.77, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 5.12}} />
+                              </div>
+                              <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                <div style={{width: 33.33, height: 66.65, left: 0.92, top: 45.91, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 5.12}} />
+                              </div>
+                              <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                <div style={{width: 34.53, height: 40.93, left: 0, top: 139.42, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 5.12}} />
+                              </div>
+                              <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-start', display: 'flex'}}>
+                                <div style={{width: 34.53, height: 147.09, left: 0, top: 0, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 5.12}} />
+                              </div>
+                              <div style={{position: 'relative', justifyContent: 'flex-start', alignItems: 'flex-end', display: 'flex'}}>
+                                <div style={{width: 34.53, height: 108.72, left: 0, top: 38.37, position: 'absolute', background: 'linear-gradient(179deg, rgba(225, 1, 117, 0.38) 0%, #E10175 100%)', borderRadius: 5.12}} />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style={{width: 696.75, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 8.54, display: 'flex'}}>
+                  <div style={{width: 896.99, justifyContent: 'flex-start', alignItems: 'center', gap: 5.50, display: 'inline-flex'}}>
+                    <div style={{justifyContent: 'center', display: 'flex', flexDirection: 'column', color: 'var(--color-azure-11, #111827)', fontSize: 19.13, fontFamily: 'Archivo', fontWeight: '600', lineHeight: 29.76, wordWrap: 'break-word'}}>Key Talking Points</div>
+                    <div data-:hover="false" data-variant="32" style={{height: 38.26, paddingLeft: 12.75, paddingRight: 12.75, borderRadius: 6.38, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+                      <div data-variant="147" style={{width: 17, height: 17, position: 'relative'}}>
+                        <div style={{width: 9.92, height: 9.92, left: 5.67, top: 5.67, position: 'absolute', outline: '1.42px var(--color-grey-46, #6B7280) solid', outlineOffset: '-0.71px'}} />
+                        <div style={{width: 9.92, height: 9.92, left: 1.42, top: 1.42, position: 'absolute', outline: '1.42px var(--color-grey-46, #6B7280) solid', outlineOffset: '-0.71px'}} />
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{alignSelf: 'stretch', borderRadius: 6.60, flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 9.91, display: 'flex'}}>
+                    <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'center', gap: 9.91, display: 'inline-flex'}}>
+                      <div style={{width: 6.60, flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', display: 'inline-flex'}}>
+                        <div style={{width: 6.60, height: 6.60, background: '#781142', borderRadius: 8253.80}} />
+                      </div>
+                      <div style={{width: 326.93, height: 7.45, background: '#A5A5A5', borderRadius: 4}} />
+                    </div>
+                    <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'center', gap: 9.91, display: 'inline-flex'}}>
+                      <div style={{width: 6.60, flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', display: 'inline-flex'}}>
+                        <div style={{width: 6.60, height: 6.60, background: '#781142', borderRadius: 8253.80}} />
+                      </div>
+                      <div style={{width: 477.52, height: 7.45, background: '#A5A5A5', borderRadius: 4}} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{width: 55.37, height: 72.99, left: 225.58, top: 382.56, position: 'absolute', transform: 'rotate(15deg)', transformOrigin: 'top left', background: 'black', boxShadow: '4px 4px 5px rgba(0, 0, 0, 0.10)', borderRadius: 2, outline: '2px white solid', outlineOffset: '-1px'}} />
+    </div>
+  </div>
+</div>

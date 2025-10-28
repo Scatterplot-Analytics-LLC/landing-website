@@ -1,0 +1,48 @@
+---
+alwaysApply: true
+---
+
+# 🧭 Tailwind & Design System Enforcement Rules
+# These rules ensure visual consistency and scalability across all components.
+
+rules:
+  - id: "no-hardcoded-widths"
+    description: |
+      Do not use hardcoded pixel widths like `w-[375px]`.
+      Use the nearest available Tailwind utility class (e.g. `w-96`, `max-w-md`, etc.),
+      or add a new custom value in `@tailwind.config.ts` under `theme.extend.width` if required.
+    examples:
+      bad: "<div className='w-[375px]'>...</div>"
+      good: "<div className='w-96'>...</div>"
+
+  - id: "no-inline-styles"
+    description: |
+      Inline styles are not allowed. Use Tailwind utility classes or create custom ones in `@tailwind.config.ts`.
+      This keeps styling consistent and themable across dark/light modes and design tokens.
+    examples:
+      bad: "<div style={{ marginTop: '20px', backgroundColor: '#eee' }}>...</div>"
+      good: "<div className='mt-5 bg-palette-100'>...</div>"
+
+  - id: "no-hardcoded-colors"
+    description: |
+      Do not use hardcoded color values like `bg-[#eeeeee]` or `text-[#333333]`.
+      Define new entries in `@colors.ts` and reference them through semantic Tailwind classes
+      (e.g. `bg-surface-muted`, `text-palette-400`, etc.).
+      This ensures proper theme mapping, maintainability, and color consistency.
+    examples:
+      bad: "<div className='bg-[#eeeeee] text-[#333]'>Button</div>"
+      good: "<div className='bg-surface-muted text-palette-400'>Button</div>"
+
+  - id: "design-system-alignment"
+    description: |
+      All UI components must use the centralized color and spacing tokens from `@colors.ts` and `@tailwind.config.ts`.
+      If a needed spacing, radius, or color token doesn't exist, add it to the design system — do not hardcode.
+    examples:
+      bad: "<div className='rounded-[14px] p-[18px] bg-[#fafafa]'>...</div>"
+      good: "<div className='rounded-xl p-5 bg-surface-light'>...</div>"
+
+  - id: "component-theming"
+    description: |
+      Always prefer semantic Tailwind classes (e.g. `bg-surface-primary`, `text-palette-accent`)
+      that map to entries in `@colors.ts`. Never apply raw hex, RGB, or HSL values.
+      If a variant is missing, extend it centrally rather than patching locally.

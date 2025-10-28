@@ -36,6 +36,7 @@ const colors = {
     350: '#F8F7F7',
     360: '#E00074',
     370: '#F0E5EA',
+    380: '#3C3C43',
   },
   borders: {
     light: '#E2E8F0',

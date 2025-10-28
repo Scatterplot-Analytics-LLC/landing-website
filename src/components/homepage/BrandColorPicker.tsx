@@ -62,7 +62,6 @@ const BrandColorPicker = ({ onColorChange, color }: BrandColorPickerProps) => {
         <HexColorPicker
           color={color}
           onChange={handleColorChange}
-          className='h-52 w-52'
         />
       </div>
 
