@@ -13,6 +13,8 @@ interface BentoComponentProps {
 const BentoComponent: React.FC<BentoComponentProps> = ({
   color = '#781242',
 }) => {
+  console.log('color', color)
+
   return (
     <div className='mx-auto w-full max-w-7xl'>
       {/* Main Grid Container */}
@@ -77,7 +79,10 @@ const BentoComponent: React.FC<BentoComponentProps> = ({
         </div>
 
         {/* Section 4: Bottom-Right - CTA Section */}
-        <div className='col-span-4 flex flex-col items-center justify-between rounded-xl bg-palette-200 px-8 py-6'>
+        <div
+          className='col-span-4 flex flex-col items-center justify-between rounded-xl px-8 py-6'
+          style={{ backgroundColor: color }}
+        >
           <h2 className='text-lg font-normal leading-5 text-white lg:text-2xl lg:leading-8 xl:text-3xl xl:leading-10'>
             See How
             <br />
@@ -93,7 +98,8 @@ const BentoComponent: React.FC<BentoComponentProps> = ({
           <AnimatedButton
             variant='outline'
             size='lg'
-            className='bg-white text-palette-200 hover:bg-palette-90 hover:text-palette-210'
+            className='bg-white hover:bg-palette-90'
+            textColor={color}
           >
             Try at $25/week
           </AnimatedButton>
