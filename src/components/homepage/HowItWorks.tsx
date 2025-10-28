@@ -37,6 +37,14 @@ const HowItWorks: React.FC = () => {
   const [complete2Step, setComplete2Step] = useState(false)
   const [complete3Step, setComplete3Step] = useState(false)
   const [activeStep, setActiveStep] = useState<1 | 2 | 3 | 0>(0)
+  const [activeProgressPct, setActiveProgressPct] = useState<number>(0)
+
+  // Drive progress by elapsed time (seconds), quantized to 5%
+  const durationsByStep = useMemo((): Record<1 | 2 | 3, number> => {
+    return { 1: 7.0, 2: 5.3, 3: 11.5 }
+  }, [])
+  const rafRef = useRef<number | null>(null)
+  const startTimeRef = useRef<number | null>(null)
 
   // Section visibility observer (40% threshold)
   const sectionRef = useRef<HTMLDivElement | null>(null)
@@ -78,6 +86,7 @@ const HowItWorks: React.FC = () => {
     if (complete1Step) {
       // console.log(animationRef1.current)
       setActiveStep(1)
+      setActiveProgressPct(0)
       animationRef1.current?.play()
       setComplete1Step(false)
     }
@@ -87,6 +96,7 @@ const HowItWorks: React.FC = () => {
     if (complete2Step) {
       // console.log(animationRef2.current)
       setActiveStep(2)
+      setActiveProgressPct(0)
       animationRef2.current?.play()
       setComplete2Step(false)
     }
@@ -96,10 +106,53 @@ const HowItWorks: React.FC = () => {
     if (complete3Step) {
       // console.log(animationRef3.current)
       setActiveStep(3)
+      setActiveProgressPct(0)
       animationRef3.current?.play()
       setComplete3Step(false)
     }
   }, [complete3Step])
+
+  // requestAnimationFrame loop to update progress based on time for the active step
+  useEffect(() => {
+    if (activeStep === 0) return
+
+    // cancel any previous raf
+    if (rafRef.current) {
+      window.cancelAnimationFrame(rafRef.current)
+      rafRef.current = null
+    }
+
+    startTimeRef.current = null
+    const durationSec = durationsByStep[activeStep]
+
+    const tick = (ts: number) => {
+      if (startTimeRef.current === null) startTimeRef.current = ts
+      const elapsedMs = ts - startTimeRef.current
+      const elapsedSec = elapsedMs / 1000
+      const rawPct = Math.min(
+        100,
+        Math.max(0, (elapsedSec / durationSec) * 100),
+      )
+      setActiveProgressPct(rawPct)
+      if (rawPct < 100) {
+        rafRef.current = window.requestAnimationFrame(tick)
+      }
+    }
+
+    rafRef.current = window.requestAnimationFrame(tick)
+
+    return () => {
+      if (rafRef.current) {
+        window.cancelAnimationFrame(rafRef.current)
+        rafRef.current = null
+      }
+    }
+  }, [activeStep, durationsByStep])
+
+  const overlayStyle = useMemo(() => {
+    const v = Math.max(0, Math.min(100, activeProgressPct))
+    return { height: `${v}%` }
+  }, [activeProgressPct])
 
   // Log animation durations once the players are available
   // useEffect(() => {
@@ -184,12 +237,16 @@ const HowItWorks: React.FC = () => {
         <div className='flex flex-col items-stretch justify-start gap-7'>
           <div
             className={
-              'flex flex-col gap-3 border-l-4 pl-7 ' +
-              (activeStep === 1
-                ? 'border-palette-390 py-8'
-                : 'border-palette-140')
+              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 ' +
+              (activeStep === 1 ? 'py-8' : '')
             }
           >
+            {activeStep === 1 && (
+              <div
+                className='pointer-events-none absolute -left-1 top-0 z-10 w-1 bg-palette-390'
+                style={overlayStyle}
+              />
+            )}
             <div
               className={
                 'text-lg font-medium leading-tight xl:text-2xl ' +
@@ -216,12 +273,16 @@ const HowItWorks: React.FC = () => {
 
           <div
             className={
-              'flex flex-col gap-3 border-l-4 pl-7 ' +
-              (activeStep === 2
-                ? 'border-palette-390 py-8'
-                : 'border-palette-140')
+              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 ' +
+              (activeStep === 2 ? 'py-8' : '')
             }
           >
+            {activeStep === 2 && (
+              <div
+                className='pointer-events-none absolute -left-1 top-0 z-10 w-1 bg-palette-390'
+                style={overlayStyle}
+              />
+            )}
             <div
               className={
                 'text-lg font-medium leading-tight xl:text-2xl ' +
@@ -247,12 +308,16 @@ const HowItWorks: React.FC = () => {
 
           <div
             className={
-              'flex flex-col gap-3 border-l-4 pl-7 ' +
-              (activeStep === 3
-                ? 'border-palette-390 py-8'
-                : 'border-palette-140')
+              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 ' +
+              (activeStep === 3 ? 'py-8' : '')
             }
           >
+            {activeStep === 3 && (
+              <div
+                className='pointer-events-none absolute -left-1 top-0 z-10 w-1 bg-palette-390'
+                style={overlayStyle}
+              />
+            )}
             <div
               className={
                 'text-lg font-medium leading-tight xl:text-2xl ' +
