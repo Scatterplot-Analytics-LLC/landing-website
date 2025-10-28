@@ -3,8 +3,11 @@
 import React from 'react'
 import DecorativeLines from './DecorativeLines'
 import BentoComponent from './BentoComponent'
+import BrandColorPicker from './BrandColorPicker'
+import { useState } from 'react'
 
 const SmarterPresentations: React.FC = () => {
+  const [color, setColor] = useState('#781242')
   return (
     <div className='flex w-full flex-col items-center justify-start gap-20 bg-white px-4 py-24 md:px-16 lg:px-16'>
       {/* Header Section */}
@@ -29,8 +32,15 @@ const SmarterPresentations: React.FC = () => {
         </div>
       </div>
 
-      {/* Cards Grid */}
-      <BentoComponent color='#69b4f9' />
+      {/* Cards Grid with Color Picker Overlay */}
+      <div className='relative w-full'>
+        <BentoComponent color={color} />
+
+        {/* Color Picker Overlay */}
+        <div className='absolute -bottom-40 left-0 z-20'>
+          <BrandColorPicker onColorChange={setColor} color={color} />
+        </div>
+      </div>
     </div>
   )
 }
