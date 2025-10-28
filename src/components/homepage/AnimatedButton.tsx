@@ -12,6 +12,7 @@ interface AnimatedButtonProps {
   onClick?: () => void
   href?: string
   disabled?: boolean
+  textColor?: string
 }
 
 const AnimatedButton = ({
@@ -22,6 +23,7 @@ const AnimatedButton = ({
   onClick,
   href,
   disabled = false,
+  textColor,
 }: AnimatedButtonProps) => {
   const baseClasses = cn(
     'group relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-sm text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
@@ -54,16 +56,34 @@ const AnimatedButton = ({
           }
         }}
       >
-        <span className='text-sm font-medium'>{children}</span>
+        <span 
+        className='text-sm font-medium transition-all duration-300'
+        style={{ 
+          color: textColor,
+          filter: 'brightness(1)'
+        }}
+        onMouseEnter={(e) => {
+          if (textColor) {
+            e.currentTarget.style.filter = 'brightness(1.2)'
+          }
+        }}
+        onMouseLeave={(e) => {
+          if (textColor) {
+            e.currentTarget.style.filter = 'brightness(1)'
+          }
+        }}
+      >
+        {children}
+      </span>
         <div className='relative h-4 w-4 overflow-hidden'>
           {/* Current arrow - slides out to top-right */}
           <div className='absolute inset-0 transition-transform duration-700 ease-in-out group-hover:-translate-y-4 group-hover:translate-x-4'>
-            <ArrowUpRightIcon className='h-4 w-4' />
+            <ArrowUpRightIcon className='h-4 w-4' style={{ color: textColor }} />
           </div>
 
           {/* New arrow - slides in from bottom-left */}
           <div className='absolute inset-0 -translate-x-4 translate-y-4 transition-transform duration-700 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100'>
-            <ArrowUpRightIcon className='h-4 w-4' />
+            <ArrowUpRightIcon className='h-4 w-4' style={{ color: textColor }} />
           </div>
         </div>
       </a>
@@ -92,16 +112,34 @@ const AnimatedButton = ({
         }
       }}
     >
-      <span className='text-sm font-medium'>{children}</span>
+      <span 
+        className='text-sm font-medium transition-all duration-300'
+        style={{ 
+          color: textColor,
+          filter: 'brightness(1)'
+        }}
+        onMouseEnter={(e) => {
+          if (textColor) {
+            e.currentTarget.style.filter = 'brightness(1.2)'
+          }
+        }}
+        onMouseLeave={(e) => {
+          if (textColor) {
+            e.currentTarget.style.filter = 'brightness(1)'
+          }
+        }}
+      >
+        {children}
+      </span>
       <div className='relative ml-2 h-4 w-4 overflow-hidden'>
         {/* Current arrow - slides out to top-right */}
         <div className='absolute inset-0 transition-transform duration-700 ease-in-out group-hover:-translate-y-4 group-hover:translate-x-4'>
-          <ArrowUpRightIcon className='h-4 w-4' />
+          <ArrowUpRightIcon className='h-4 w-4' style={{ color: textColor }} />
         </div>
 
         {/* New arrow - slides in from bottom-left */}
         <div className='absolute inset-0 -translate-x-4 translate-y-4 transition-transform duration-700 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100'>
-          <ArrowUpRightIcon className='h-4 w-4' />
+          <ArrowUpRightIcon className='h-4 w-4' style={{ color: textColor }} />
         </div>
       </div>
     </Button>
