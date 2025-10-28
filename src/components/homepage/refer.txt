@@ -12,6 +12,7 @@
       <div style={{width: 766.23, textAlign: 'center', color: 'var(--color-azure-27, #374151)', fontSize: 24, fontFamily: 'Archivo', fontWeight: '400', lineHeight: 32, wordWrap: 'break-word'}}>From picking a template to presenting your insights—just 3 simple steps to create polished, data-rich decks that win client confidence.</div>
     </div>
   </div>
+  /** Ignore from here **/
   <div style={{alignSelf: 'stretch', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 24, display: 'inline-flex'}}>
     <div style={{width: 488, alignSelf: 'stretch', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', gap: 28, display: 'inline-flex'}}>
       <div style={{alignSelf: 'stretch', paddingLeft: 28, paddingRight: 28, paddingTop: 32, paddingBottom: 32, position: 'relative', borderLeft: '4px var(--color-azure-65, #9CA3AF) solid', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'flex'}}>

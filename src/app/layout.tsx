@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import '../styles/colors'
 import '../styles/globals.css'
+import LottiePreloader from '@/src/components/homepage/LottiePreloader'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <LottiePreloader />
         {children}
       </body>
     </html>

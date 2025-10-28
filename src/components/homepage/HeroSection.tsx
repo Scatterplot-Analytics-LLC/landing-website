@@ -69,10 +69,21 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
         <div className='inline-flex items-start justify-start gap-6'>
-          <AnimatedButton size='default'>Try Now</AnimatedButton>
+          <AnimatedButton
+            size='default'
+            onClick={() => {
+              const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
+              window.location.href = `${base}/auth/signup`
+            }}
+          >
+            Try Now
+          </AnimatedButton>
           <Button
             variant='outline'
             className='border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90 hover:text-palette-210'
+            onClick={() => {
+              window.location.href = '#features'
+            }}
           >
             <span className='text-sm font-medium'>Learn More</span>
           </Button>

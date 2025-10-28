@@ -4,6 +4,7 @@ import AnimatedButton from '@/src/components/homepage/AnimatedButton'
 import { Button } from '@/src/components/ui/button'
 import { CircleUser } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -35,25 +36,36 @@ const Header = () => {
         </nav>
 
         {/* Logo */}
-        <div className='flex-1 text-center'>
+        <Link href='/' className='flex-1 text-center' aria-label='Go to home'>
           <Image
             src='/logo-wordmark.png'
             alt='Scatterplot'
             width={200}
             height={48}
             className='mx-auto h-8 w-auto sm:h-10 md:h-12'
-            style={{ aspectRatio: '200/48' }}
           />
-        </div>
+        </Link>
 
         {/* Action Buttons */}
         <div className='flex items-center space-x-4'>
-          <AnimatedButton size='sm'>Try Now</AnimatedButton>
+          <AnimatedButton
+            size='sm'
+            onClick={() => {
+              const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
+              window.location.href = `${base}/auth/login`
+            }}
+          >
+            Try Now
+          </AnimatedButton>
 
           <Button
             variant='outline'
             size='sm'
             className='border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90 hover:text-palette-210'
+            onClick={() => {
+              const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
+              window.location.href = `${base}/auth/signup`
+            }}
           >
             <CircleUser className='h-4 w-4' />
             <span className='text-sm font-medium'>Login</span>
