@@ -1,40 +1,51 @@
 'use client'
 
-import { Instagram, Linkedin, X as XIcon } from 'lucide-react'
+import { Instagram, Linkedin, X as XIcon, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-// import { useState } from 'react'
+import { useState } from 'react'
 
 const Footer = () => {
-  //   const [formData, setFormData] = useState({
-  //     name: '',
-  //     email: '',
-  //     message: '',
-  //   })
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
 
-  //   const handleSubmit = (e: React.FormEvent) => {
-  //     e.preventDefault()
-  //     // Handle form submission here
-  //     console.log('Form submitted:', formData)
-  //   }
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // Handle form submission here
+    console.log('Form submitted:', formData)
+  }
 
   return (
     <div className='relative bg-white'>
       {/* Contact Form Section */}
-      {/* <div className='relative overflow-hidden rounded-3xl bg-[#DD0473] px-16 py-20'>
-   
-        <div className='absolute left-[186px] top-[-775px] h-[944px] w-[944px] rounded-full bg-[#FF0285] blur-[307px]' />
-        <div className='absolute left-[94px] top-[-210px] h-[1190px] w-[1128px] outline outline-[0.61px] outline-offset-[-0.3px] outline-[#FF5FB2]' />
-        <div className='absolute -left-[150px] top-[412px] h-[643px] w-[1616px] rounded-full bg-[#490524] blur-[320px]' />
+      <div className='bg-palette-420 absolute -top-40 left-1/2 z-20 w-10/12 -translate-x-1/2 overflow-hidden rounded-3xl px-10 py-12'>
+        {/* Background overlays (kept within contact form via overflow-hidden) */}
+        {/* <Image
+          src='/footer-gradient.png'
+          alt='gradient background'
+          fill
+          priority
+          className='pointer-events-none absolute inset-0 z-0 select-none border-2 border-green-500 object-cover'
+          aria-hidden
+        /> */}
+        <Image
+          src='/footer-vector.png'
+          alt='vector background'
+          fill
+          className='pointer-events-none absolute z-0 select-none object-contain'
+          aria-hidden
+        />
 
         <div className='relative z-10 flex items-start justify-between'>
-      
-          <div className='flex w-[697px] flex-col gap-3'>
-            <h2 className='text-[56px] font-medium leading-[73px] text-white'>
-              Can't find a visual you want?
+          <div className='w-697 flex flex-col gap-3'>
+            <h2 className='text-56 leading-73 font-medium text-white'>
+              Can&apos;t find a visual you want?
             </h2>
-            <p className='text-lg font-normal leading-[27px] text-[#F9F9F9]'>
-              Share suggestions or topics you'd love to see— by filling the form
-              or emailing at{' '}
+            <p className='leading-27 text-palette-395 text-lg font-normal'>
+              Share suggestions or topics you&apos;d love to see— by filling the
+              form or emailing at{' '}
               <a
                 href='mailto:support@scatterplot.co'
                 className='font-medium text-white underline'
@@ -44,66 +55,77 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className='flex w-[405px] flex-col gap-6'>
+          <div className='w-405 flex flex-col gap-6'>
             <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
-             
               <div className='flex gap-6'>
                 <div className='flex flex-1 flex-col gap-2'>
-                  <label className='text-sm font-medium leading-[14px] text-white'>
+                  <label
+                    htmlFor='name'
+                    className='leading-14 text-sm font-medium text-white'
+                  >
                     Name
                   </label>
                   <input
+                    id='name'
                     type='text'
                     value={formData.name}
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
                     placeholder='Enter your name'
-                    className='w-full rounded-lg bg-[#AA0558] p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                    className='bg-palette-400 w-full rounded-lg p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                   />
                 </div>
                 <div className='flex flex-1 flex-col gap-2'>
-                  <label className='text-sm font-medium leading-[14px] text-white'>
+                  <label
+                    htmlFor='email'
+                    className='leading-14 text-sm font-medium text-white'
+                  >
                     Email
                   </label>
                   <input
+                    id='email'
                     type='email'
                     value={formData.email}
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
                     placeholder='Enter your email'
-                    className='w-full rounded-lg bg-[#AA0558] p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                    className='bg-palette-400 w-full rounded-lg p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                   />
                 </div>
               </div>
 
               <div className='flex flex-col gap-2'>
-                <label className='text-sm font-medium leading-[14px] text-white'>
+                <label
+                  htmlFor='message'
+                  className='leading-14 text-sm font-medium text-white'
+                >
                   Message
                 </label>
                 <textarea
+                  id='message'
                   value={formData.message}
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
                   placeholder='Describe the visual you are looking for ...'
                   rows={4}
-                  className='w-full resize-none rounded-lg bg-[#AA0558] p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                  className='bg-palette-400 w-full resize-none rounded-lg p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                 />
               </div>
 
               <button
                 type='submit'
-                className='flex h-[52px] items-center justify-center gap-2 rounded-lg bg-[#E00074] px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-[#DD0473]'
+                className='hover:bg-palette-420 flex h-52 items-center justify-center gap-2 rounded-lg bg-palette-360 px-7 py-3 text-sm font-medium text-white transition-colors'
               >
                 <span>Send a message</span>
-                <ArrowRight className='h-[17px] w-[17px]' />
+                <ArrowRight className='h-17 w-17' />
               </button>
             </form>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Footer Section */}
       <div className='flex h-auto flex-col bg-palette-200 px-16 pt-60'>

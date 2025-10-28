@@ -76,10 +76,17 @@ const config: Config = {
         '55': '55%',
         '100px': '100px',
         '112': '482px',
+        // custom fixed layout widths
+        contact: '1316px',
+        // footer specific widths
+        '697': '697px',
+        '405': '405px',
       },
       height: {
         'screen-200': 'calc(100vh - 200px)',
         '104': '26rem', // 416px
+        '52': '52px',
+        '17': '17px',
       },
       padding: {
         '15': '3.75rem', // 60px
@@ -95,6 +102,12 @@ const config: Config = {
       },
       fontSize: {
         '10': '10px',
+        '56': '3.5rem', // 56px
+      },
+      lineHeight: {
+        '14': '14px',
+        '27': '27px',
+        '73': '73px',
       },
       borderRadius: {
         lg: 'var(--radius)',
