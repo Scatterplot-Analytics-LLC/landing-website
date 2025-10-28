@@ -37,6 +37,7 @@ const colors = {
     360: '#E00074',
     370: '#F0E5EA',
     380: '#3C3C43',
+    390: '#B20B61',
   },
   borders: {
     light: '#E2E8F0',
