@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div className='relative bg-white'>
       {/* Contact Form Section */}
-      <div className='bg-palette-420 absolute -top-40 left-1/2 z-20 w-10/12 -translate-x-1/2 overflow-hidden rounded-3xl px-10 py-12'>
+      <div className='absolute -top-40 left-1/2 z-20 w-10/12 -translate-x-1/2 overflow-hidden rounded-3xl bg-palette-420 px-10 py-12'>
         {/* Background overlays (kept within contact form via overflow-hidden) */}
         {/* <Image
           src='/footer-gradient.png'
@@ -34,16 +34,16 @@ const Footer = () => {
           src='/footer-vector.png'
           alt='vector background'
           fill
-          className='pointer-events-none absolute z-0 select-none object-contain'
+          className='pointer-events-none absolute z-0 select-none object-cover object-top'
           aria-hidden
         />
 
         <div className='relative z-10 flex items-start justify-between'>
-          <div className='w-697 flex flex-col gap-3'>
-            <h2 className='text-56 leading-73 font-medium text-white'>
+          <div className='flex w-697 flex-col gap-3'>
+            <h2 className='text-56 font-medium leading-73 text-white'>
               Can&apos;t find a visual you want?
             </h2>
-            <p className='leading-27 text-palette-395 text-lg font-normal'>
+            <p className='text-lg font-normal leading-27 text-palette-395'>
               Share suggestions or topics you&apos;d love to see— by filling the
               form or emailing at{' '}
               <a
@@ -55,13 +55,13 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className='w-405 flex flex-col gap-6'>
+          <div className='flex w-405 flex-col gap-6'>
             <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
               <div className='flex gap-6'>
                 <div className='flex flex-1 flex-col gap-2'>
                   <label
                     htmlFor='name'
-                    className='leading-14 text-sm font-medium text-white'
+                    className='text-sm font-medium leading-14 text-white'
                   >
                     Name
                   </label>
@@ -73,13 +73,13 @@ const Footer = () => {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     placeholder='Enter your name'
-                    className='bg-palette-400 w-full rounded-lg p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                    className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                   />
                 </div>
                 <div className='flex flex-1 flex-col gap-2'>
                   <label
                     htmlFor='email'
-                    className='leading-14 text-sm font-medium text-white'
+                    className='text-sm font-medium leading-14 text-white'
                   >
                     Email
                   </label>
@@ -91,7 +91,7 @@ const Footer = () => {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     placeholder='Enter your email'
-                    className='bg-palette-400 w-full rounded-lg p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                    className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                   />
                 </div>
               </div>
@@ -99,7 +99,7 @@ const Footer = () => {
               <div className='flex flex-col gap-2'>
                 <label
                   htmlFor='message'
-                  className='leading-14 text-sm font-medium text-white'
+                  className='text-sm font-medium leading-14 text-white'
                 >
                   Message
                 </label>
@@ -111,16 +111,16 @@ const Footer = () => {
                   }
                   placeholder='Describe the visual you are looking for ...'
                   rows={4}
-                  className='bg-palette-400 w-full resize-none rounded-lg p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                  className='w-full resize-none rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                 />
               </div>
 
               <button
                 type='submit'
-                className='hover:bg-palette-420 flex h-52 items-center justify-center gap-2 rounded-lg bg-palette-360 px-7 py-3 text-sm font-medium text-white transition-colors'
+                className='flex h-52 items-center justify-center gap-2 rounded-lg bg-palette-360 px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-palette-420'
               >
                 <span>Send a message</span>
-                <ArrowRight className='h-17 w-17' />
+                <ArrowRight className='w-17 h-17' />
               </button>
             </form>
           </div>
