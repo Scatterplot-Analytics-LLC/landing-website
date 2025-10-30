@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://scatterplot-landing.netlify.app/
+
+# Sitemaps
+Sitemap: https://scatterplot-landing.netlify.app/sitemap.xml
