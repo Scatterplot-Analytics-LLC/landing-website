@@ -2,20 +2,10 @@
 
 import { Instagram, Linkedin, X as XIcon, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useForm, ValidationError } from '@formspree/react'
 
 const Footer = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-  }
+  const [state, handleSubmit] = useForm('xdkpdzve')
 
   return (
     <div className='relative bg-white'>
@@ -56,73 +46,85 @@ const Footer = () => {
           </div>
 
           <div className='flex w-405 flex-col gap-6'>
-            <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
-              <div className='flex gap-6'>
-                <div className='flex flex-1 flex-col gap-2'>
-                  <label
-                    htmlFor='name'
-                    className='text-sm font-medium leading-14 text-white'
-                  >
-                    Name
-                  </label>
-                  <input
-                    id='name'
-                    type='text'
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    placeholder='Enter your name'
-                    className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
-                  />
-                </div>
-                <div className='flex flex-1 flex-col gap-2'>
-                  <label
-                    htmlFor='email'
-                    className='text-sm font-medium leading-14 text-white'
-                  >
-                    Email
-                  </label>
-                  <input
-                    id='email'
-                    type='email'
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    placeholder='Enter your email'
-                    className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
-                  />
-                </div>
+            {state.succeeded ? (
+              <div className='flex flex-col gap-3 rounded-lg bg-palette-400 p-4 text-white'>
+                <p className='text-sm leading-5'>
+                  Thanks! Your message has been sent.
+                </p>
               </div>
+            ) : (
+              <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
+                <div className='flex gap-6'>
+                  <div className='flex flex-1 flex-col gap-2'>
+                    <label
+                      htmlFor='name'
+                      className='text-sm font-medium leading-14 text-white'
+                    >
+                      Name
+                    </label>
+                    <input
+                      id='name'
+                      type='text'
+                      name='name'
+                      placeholder='Enter your name'
+                      className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                    />
+                  </div>
+                  <div className='flex flex-1 flex-col gap-2'>
+                    <label
+                      htmlFor='email'
+                      className='text-sm font-medium leading-14 text-white'
+                    >
+                      Email
+                    </label>
+                    <input
+                      id='email'
+                      type='email'
+                      name='email'
+                      placeholder='Enter your email'
+                      className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                    />
+                    <ValidationError
+                      prefix='Email'
+                      field='email'
+                      errors={state.errors}
+                    />
+                  </div>
+                </div>
 
-              <div className='flex flex-col gap-2'>
-                <label
-                  htmlFor='message'
-                  className='text-sm font-medium leading-14 text-white'
+                <div className='flex flex-col gap-2'>
+                  <label
+                    htmlFor='message'
+                    className='text-sm font-medium leading-14 text-white'
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id='message'
+                    name='message'
+                    placeholder='Describe the visual you are looking for ...'
+                    rows={4}
+                    className='w-full resize-none rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
+                  />
+                  <ValidationError
+                    prefix='Message'
+                    field='message'
+                    errors={state.errors}
+                  />
+                </div>
+
+                <button
+                  type='submit'
+                  disabled={state.submitting}
+                  className='flex h-52 items-center justify-center gap-2 rounded-lg bg-palette-360 px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-palette-420 disabled:opacity-70'
                 >
-                  Message
-                </label>
-                <textarea
-                  id='message'
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                  placeholder='Describe the visual you are looking for ...'
-                  rows={4}
-                  className='w-full resize-none rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
-                />
-              </div>
-
-              <button
-                type='submit'
-                className='flex h-52 items-center justify-center gap-2 rounded-lg bg-palette-360 px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-palette-420'
-              >
-                <span>Send a message</span>
-                <ArrowRight className='w-17 h-17' />
-              </button>
-            </form>
+                  <span>
+                    {state.submitting ? 'Sending...' : 'Send a message'}
+                  </span>
+                  <ArrowRight className='w-17 h-17' />
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </div>

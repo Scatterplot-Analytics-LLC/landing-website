@@ -52,7 +52,7 @@ const Header = () => {
             size='sm'
             onClick={() => {
               const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
-              window.location.href = `${base}/auth/login`
+              window.location.href = `${base}/auth/signup`
             }}
           >
             Try Now
@@ -64,7 +64,7 @@ const Header = () => {
             className='border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90 hover:text-palette-210'
             onClick={() => {
               const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
-              window.location.href = `${base}/auth/signup`
+              window.location.href = `${base}/auth/login`
             }}
           >
             <CircleUser className='h-4 w-4' />
