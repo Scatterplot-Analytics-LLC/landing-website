@@ -73,10 +73,14 @@ export default function FAQ() {
   return (
     <div className='lg:px-30 w-full bg-white px-15 py-50 md:flex md:items-start md:justify-between md:gap-16 xl:pb-60 xl:pt-40 2xl:px-60'>
       <div className='mb-12 flex justify-center md:mb-0 md:w-auto'>
-        <h2 className='text-5xl font-normal leading-tight tracking-normal text-palette-290 lg:text-6xl'>
+        <h2 className='hidden text-5xl font-normal leading-tight tracking-normal text-palette-290 lg:block lg:text-6xl'>
           <span className='block'>Frequently</span>
           <span className='block'>asked</span>
           <span className='block'>questions</span>
+        </h2>
+        <h2 className='block text-center text-5xl font-normal leading-tight tracking-normal text-palette-290 lg:hidden lg:text-6xl'>
+          Frequently Asked <br />
+          Questions
         </h2>
       </div>
 
