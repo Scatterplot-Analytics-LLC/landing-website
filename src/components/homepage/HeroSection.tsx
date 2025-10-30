@@ -59,9 +59,9 @@ const HeroSection: React.FC = () => {
       <div className='relative z-10 mb-16 flex w-full flex-col items-center justify-start gap-10 px-4 pt-32'>
         <div className='flex flex-col items-center justify-start gap-4'>
           <div className='flex flex-col items-center justify-start gap-3'>
-            <div className='max-w-4xl justify-start text-center text-6xl font-normal leading-tight text-palette-10'>
+            <h1 className='m-0 max-w-4xl justify-start text-center text-6xl font-normal leading-tight text-palette-10'>
               Build professional Investment decks, in minutes
-            </div>
+            </h1>
             <div className='max-w-lg justify-start text-center text-lg font-normal leading-relaxed text-palette-10'>
               Access expert slides on market and macro trends which are updated
               daily and customizable to your brand.

@@ -6,6 +6,8 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
+    "sitemap": "next-sitemap",
+    "postbuild": "next-sitemap",
     "prepare": "husky",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
