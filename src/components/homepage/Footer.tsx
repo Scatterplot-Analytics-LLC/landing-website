@@ -3,9 +3,36 @@
 import { Instagram, Linkedin, X as XIcon, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import { useForm, ValidationError } from '@formspree/react'
+import { useState } from 'react'
 
 const Footer = () => {
-  const [state, handleSubmit] = useForm('xdkpdzve')
+  const [state, handleSubmit] = useForm('xjkpoawy') // https://formspree.io/f/xjkpoawy
+  const [clientErrors, setClientErrors] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = e.currentTarget
+    const data = new FormData(form)
+    const name = String(data.get('name') || '').trim()
+    const email = String(data.get('email') || '').trim()
+    const message = String(data.get('message') || '').trim()
+
+    const nextErrors = {
+      name: name ? '' : 'Name is required',
+      email: email ? '' : 'Email is required',
+      message: message ? '' : 'Message is required',
+    }
+    setClientErrors(nextErrors)
+
+    if (!name || !email || !message) return
+
+    // hand over to Formspree
+    await handleSubmit(e)
+  }
 
   return (
     <div className='relative bg-white'>
@@ -53,7 +80,7 @@ const Footer = () => {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
+              <form onSubmit={onSubmit} className='flex flex-col gap-6'>
                 <div className='flex gap-6'>
                   <div className='flex flex-1 flex-col gap-2'>
                     <label
@@ -66,9 +93,16 @@ const Footer = () => {
                       id='name'
                       type='text'
                       name='name'
+                      required
+                      aria-invalid={!!clientErrors.name}
                       placeholder='Enter your name'
                       className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                     />
+                    {clientErrors.name ? (
+                      <p className='text-xs font-medium text-white'>
+                        {clientErrors.name}
+                      </p>
+                    ) : null}
                   </div>
                   <div className='flex flex-1 flex-col gap-2'>
                     <label
@@ -81,9 +115,16 @@ const Footer = () => {
                       id='email'
                       type='email'
                       name='email'
+                      required
+                      aria-invalid={!!clientErrors.email}
                       placeholder='Enter your email'
                       className='w-full rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                     />
+                    {clientErrors.email ? (
+                      <p className='text-xs font-medium text-white'>
+                        {clientErrors.email}
+                      </p>
+                    ) : null}
                     <ValidationError
                       prefix='Email'
                       field='email'
@@ -102,10 +143,17 @@ const Footer = () => {
                   <textarea
                     id='message'
                     name='message'
+                    required
+                    aria-invalid={!!clientErrors.message}
                     placeholder='Describe the visual you are looking for ...'
                     rows={4}
                     className='w-full resize-none rounded-lg bg-palette-400 p-3 text-sm font-light leading-5 text-white/60 placeholder:text-white/60'
                   />
+                  {clientErrors.message ? (
+                    <p className='text-xs font-medium text-white'>
+                      {clientErrors.message}
+                    </p>
+                  ) : null}
                   <ValidationError
                     prefix='Message'
                     field='message'

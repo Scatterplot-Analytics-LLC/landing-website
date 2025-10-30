@@ -9,7 +9,7 @@ import { useState } from 'react'
 const SmarterPresentations: React.FC = () => {
   const [color, setColor] = useState('#781242')
   return (
-    <div className='flex w-full flex-col items-center justify-start gap-20 bg-white px-4 py-24 md:px-16 lg:px-16'>
+    <div className='flex w-full flex-col items-center justify-start gap-20 bg-white px-4 pb-50 pt-24 md:px-16 lg:px-16'>
       {/* Header Section */}
       <div className='flex flex-col items-center justify-start gap-4'>
         {/* Solutions Badge */}
