@@ -9,27 +9,24 @@ const ValueProposition: React.FC = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger)
 
-    // Get all word spans
-    const wordSpans = document.querySelectorAll(
-      '[id*="-"]',
-    ) as NodeListOf<HTMLElement>
+    // Get only span elements whose id matches "<text>-<number>"
+    const wordSpans = Array.from(
+      document.querySelectorAll('.value-proposition-container span[id]'),
+    ).filter((el) => /.+-\d+$/.test((el as HTMLElement).id)) as HTMLElement[]
 
     // Create a single ScrollTrigger for the word highlighting animation
     ScrollTrigger.create({
       id: 'words-animation',
       trigger: '.value-proposition-container',
       start: 'bottom bottom',
-      end: '+=400%',
-      scrub: 5,
+      end: '+=800%',
+      scrub: 20,
       pin: '.value-proposition-container',
       // markers: true,
       onUpdate: (self) => {
         // Calculate which word should be highlighted based on scroll progress
         const { progress } = self
-        const currentWordIndex =
-          Math.floor(progress * wordSpans.length) < 21
-            ? Math.floor(progress * wordSpans.length)
-            : 20
+        const currentWordIndex = Math.floor(progress * wordSpans.length)
 
         // Reset all words to gray
         wordSpans.forEach((wordSpan) => {
