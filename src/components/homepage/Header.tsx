@@ -9,9 +9,9 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <header className='sticky top-0 z-50 w-full bg-palette-350 px-5 py-3'>
-      <div className='mx-auto flex max-w-7xl items-center justify-between'>
+      <div className='mx-auto grid max-w-7xl grid-cols-3 items-center'>
         {/* Navigation Links */}
-        <nav className='flex items-center space-x-8'>
+        <nav className='invisible flex items-center space-x-8 lg:visible lg:flex'>
           <a
             href='#features'
             className='group relative text-sm font-medium text-palette-10 transition-colors hover:text-palette-360'
@@ -36,7 +36,7 @@ const Header = () => {
         </nav>
 
         {/* Logo */}
-        <Link href='/' className='flex-1 text-center' aria-label='Go to home'>
+        <Link href='/' className='justify-self-center' aria-label='Go to home'>
           <Image
             src='/logo-wordmark.png'
             alt='Scatterplot'
@@ -47,9 +47,10 @@ const Header = () => {
         </Link>
 
         {/* Action Buttons */}
-        <div className='flex items-center space-x-4'>
+        <div className='flex items-center space-x-4 justify-self-end'>
           <AnimatedButton
             size='sm'
+            className='hidden md:flex'
             onClick={() => {
               const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
               window.location.href = `${base}/auth/signup`
@@ -61,7 +62,7 @@ const Header = () => {
           <Button
             variant='outline'
             size='sm'
-            className='border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90 hover:text-palette-210'
+            className='hidden border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90 hover:text-palette-210 md:flex'
             onClick={() => {
               const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
               window.location.href = `${base}/auth/login`
@@ -69,6 +70,17 @@ const Header = () => {
           >
             <CircleUser className='h-4 w-4' />
             <span className='text-sm font-medium'>Login</span>
+          </Button>
+          <Button
+            variant='outline'
+            size='sm'
+            className='border-palette-30 bg-palette-80 text-palette-200 hover:bg-palette-90 hover:text-palette-210 md:hidden'
+            onClick={() => {
+              const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
+              window.location.href = `${base}/auth/login`
+            }}
+          >
+            <CircleUser className='h-4 w-4' />
           </Button>
         </div>
       </div>
