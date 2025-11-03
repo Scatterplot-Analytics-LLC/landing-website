@@ -2,8 +2,20 @@
 
 import { Instagram, Linkedin, X as XIcon, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import Script from 'next/script'
 import { useForm, ValidationError } from '@formspree/react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+// Calendly type declaration
+interface Calendly {
+  initPopupWidget: (options: { url: string }) => void
+}
+
+declare global {
+  interface Window {
+    Calendly?: Calendly
+  }
+}
 
 const Footer = () => {
   const [state, handleSubmit] = useForm('xjkpoawy') // https://formspree.io/f/xjkpoawy
@@ -12,6 +24,20 @@ const Footer = () => {
     email: '',
     message: '',
   })
+
+  // Add Calendly CSS to document head
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = 'https://assets.calendly.com/assets/external/widget.css'
+    link.rel = 'stylesheet'
+    document.head.appendChild(link)
+
+    return () => {
+      if (document.head.contains(link)) {
+        document.head.removeChild(link)
+      }
+    }
+  }, [])
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -34,8 +60,23 @@ const Footer = () => {
     await handleSubmit(e)
   }
 
+  const handleBookDemo = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    if (typeof window !== 'undefined' && window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/spati-scatterplot/30min',
+      })
+    }
+  }
+
   return (
     <div className='relative bg-white'>
+      {/* Calendly Script */}
+      <Script
+        src='https://assets.calendly.com/assets/external/widget.js'
+        strategy='lazyOnload'
+      />
+
       {/* Contact Form Section */}
       <div className='absolute -top-40 left-1/2 z-20 hidden w-10/12 -translate-x-1/2 overflow-hidden rounded-3xl bg-palette-420 px-10 py-12 lg:block'>
         {/* Background overlays (kept within contact form via overflow-hidden) */}
@@ -377,6 +418,12 @@ const Footer = () => {
               </p>
               <button className='mt-3 flex h-12 items-center justify-center rounded-lg bg-palette-360 px-6 py-4 text-base font-medium text-white transition-colors hover:bg-palette-370'>
                 Start 7-Day Free Trial
+              </button>
+              <button
+                onClick={handleBookDemo}
+                className='flex h-12 items-center justify-center rounded-lg border border-white/30 bg-transparent px-6 py-4 text-base font-medium text-white transition-colors hover:bg-white/10'
+              >
+                Book a Demo
               </button>
             </div>
           </div>
