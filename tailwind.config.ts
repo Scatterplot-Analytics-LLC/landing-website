@@ -100,6 +100,9 @@ const config: Config = {
         '112': '28rem', // 448px
         '140': '35rem', // 560px
       },
+      maxHeight: {
+        'screen-144': 'calc(100vh - 9rem)',
+      },
       fontSize: {
         '10': '10px',
         '56': '3.5rem', // 56px
@@ -108,6 +111,10 @@ const config: Config = {
         '14': '14px',
         '27': '27px',
         '73': '73px',
+        '120': '1.2',
+      },
+      letterSpacing: {
+        '200': '0.2em',
       },
       borderRadius: {
         lg: 'var(--radius)',
