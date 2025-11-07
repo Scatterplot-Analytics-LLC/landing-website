@@ -13,21 +13,21 @@ const Header = () => {
         {/* Navigation Links */}
         <nav className='invisible flex items-center space-x-8 lg:visible lg:flex'>
           <a
-            href='#features'
+            href='/#features'
             className='group relative text-sm font-medium text-palette-10 transition-colors hover:text-palette-360'
           >
             Features
             <span className='absolute bottom-0 left-0 h-0.5 w-0 bg-palette-10 transition-all duration-300 group-hover:w-full group-hover:bg-palette-360' />
           </a>
           <a
-            href='#solutions'
+            href='/#solutions'
             className='group relative text-sm font-medium text-palette-10 transition-colors hover:text-palette-360'
           >
             Solutions
             <span className='absolute bottom-0 left-0 h-0.5 w-0 bg-palette-10 transition-all duration-300 group-hover:w-full group-hover:bg-palette-360' />
           </a>
           <a
-            href='#faq'
+            href='/#faq'
             className='group relative text-sm font-medium text-palette-10 transition-colors hover:text-palette-360'
           >
             FAQ

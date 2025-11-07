@@ -29,8 +29,9 @@ const HomePage = () => {
       <section id='faq' className='scroll-mt-24'>
         <FAQ />
       </section>
-
-      <Footer />
+      <section id='footer' className='scroll-mt-24'>
+        <Footer />
+      </section>
     </div>
   )
 }

@@ -373,19 +373,19 @@ const Footer = () => {
             {/* Middle - Navigation Links */}
             <div className='flex flex-col gap-2'>
               <a
-                href='#features'
+                href='/#features'
                 className='py-2 text-sm font-medium leading-5 text-white hover:text-white/80'
               >
                 Features
               </a>
               <a
-                href='#solutions'
+                href='/#solutions'
                 className='py-2 text-sm font-medium leading-5 text-white hover:text-white/80'
               >
                 Solutions
               </a>
               <a
-                href='#faq'
+                href='/#faq'
                 className='py-2 text-sm font-medium leading-5 text-white hover:text-white/80'
               >
                 FAQ
@@ -424,21 +424,21 @@ const Footer = () => {
           {/* Center - Social Icons */}
           <div className='flex items-center gap-6'>
             <a
-              href='#feature'
+              href='/#features'
               className='h-4 w-4 text-white hover:text-white/80'
               aria-label='Instagram'
             >
               <Instagram className='h-4 w-4' />
             </a>
             <a
-              href='#feature'
+              href='/#features'
               className='h-4 w-4 text-white hover:text-white/80'
               aria-label='LinkedIn'
             >
               <Linkedin className='h-4 w-4' />
             </a>
             <a
-              href='#feature'
+              href='/#features'
               className='h-4 w-4 text-white hover:text-white/80'
               aria-label='X'
             >
@@ -449,7 +449,7 @@ const Footer = () => {
           {/* Right - Legal Links */}
           <div className='flex items-center gap-6'>
             <a
-              href='#feature'
+              href='/privacy'
               className='text-xs font-normal text-white/60 hover:text-white/80'
             >
               Privacy Policy
