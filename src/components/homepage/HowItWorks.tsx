@@ -237,7 +237,7 @@ const HowItWorks: React.FC = () => {
         <div className='flex flex-col items-stretch justify-start gap-7'>
           <div
             className={
-              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 ' +
+              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 transition-all duration-300 ease-in-out ' +
               (activeStep === 1 ? 'py-8' : '')
             }
           >
@@ -249,7 +249,7 @@ const HowItWorks: React.FC = () => {
             )}
             <div
               className={
-                'text-lg font-medium leading-tight xl:text-2xl ' +
+                'text-lg font-medium leading-tight transition-all duration-300 ease-in-out xl:text-2xl ' +
                 (activeStep === 1
                   ? 'text-palette-290'
                   : 'py-8 text-palette-140')
@@ -273,7 +273,7 @@ const HowItWorks: React.FC = () => {
 
           <div
             className={
-              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 ' +
+              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 transition-all duration-300 ease-in-out ' +
               (activeStep === 2 ? 'py-8' : '')
             }
           >
@@ -285,7 +285,7 @@ const HowItWorks: React.FC = () => {
             )}
             <div
               className={
-                'text-lg font-medium leading-tight xl:text-2xl ' +
+                'text-lg font-medium leading-tight transition-all duration-300 ease-in-out xl:text-2xl ' +
                 (activeStep === 2
                   ? 'text-palette-290'
                   : 'py-8 text-palette-140')
@@ -308,7 +308,7 @@ const HowItWorks: React.FC = () => {
 
           <div
             className={
-              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 ' +
+              'relative flex flex-col gap-3 border-l-4 border-palette-140 pl-7 transition-all duration-300 ease-in-out ' +
               (activeStep === 3 ? 'py-8' : '')
             }
           >
@@ -320,7 +320,7 @@ const HowItWorks: React.FC = () => {
             )}
             <div
               className={
-                'text-lg font-medium leading-tight xl:text-2xl ' +
+                'text-lg font-medium leading-tight transition-all duration-300 ease-in-out xl:text-2xl ' +
                 (activeStep === 3
                   ? 'text-palette-290'
                   : 'py-8 text-palette-140')

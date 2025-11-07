@@ -102,7 +102,7 @@ const TermsPage = () => {
         <header className='flex flex-col gap-6 border-b border-palette-270 pb-10 lg:flex-row lg:items-end lg:justify-between'>
           <div className='max-w-3xl space-y-4'>
             <div>
-              <h1 className='leading-120 text-4xl font-semibold text-palette-120 md:text-5xl lg:text-6xl'>
+              <h1 className='text-4xl font-semibold leading-120 text-palette-120 md:text-5xl lg:text-6xl'>
                 Terms and Conditions
               </h1>
               <p className='mt-4 text-base leading-7 text-palette-250 md:text-lg'>
@@ -129,7 +129,7 @@ const TermsPage = () => {
               <nav className='space-y-8'>
                 {navItems.map(([group, groupSections]) => (
                   <div key={group} className='space-y-3'>
-                    <p className='tracking-200 text-xs font-semibold uppercase text-palette-140'>
+                    <p className='text-xs font-semibold uppercase tracking-200 text-palette-140'>
                       {group}
                     </p>
                     <ul className='space-y-2'>
@@ -154,11 +154,11 @@ const TermsPage = () => {
         </header>
 
         <div className='mt-12 flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16'>
-          <aside className='scrollbar-thin lg:max-h-screen-144 hidden w-64 shrink-0 lg:sticky lg:top-36 lg:block lg:overflow-y-auto lg:pr-2'>
+          <aside className='scrollbar-thin hidden w-64 shrink-0 lg:sticky lg:top-36 lg:block lg:max-h-screen-144 lg:overflow-y-auto lg:pr-2'>
             <nav aria-label='Terms navigation' className='space-y-10'>
               {navItems.map(([group, groupSections]) => (
                 <div key={group} className='space-y-4'>
-                  <p className='tracking-200 text-xs font-semibold uppercase text-palette-140'>
+                  <p className='text-xs font-semibold uppercase tracking-200 text-palette-140'>
                     {group}
                   </p>
                   <ul className='space-y-2'>
