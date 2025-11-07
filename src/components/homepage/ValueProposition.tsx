@@ -43,7 +43,7 @@ const ValueProposition: React.FC = () => {
 
   // Split the text into words for highlighting (including "Scatterplot")
   const text =
-    'Scatterplot saves advisors hours by delivering updated, professional, brand-ready slides instantly which will turn tedious deck creation into confident, client-focused conversations.'
+    'Advisors spend hours finding data, building charts, and polishing decks. Scatterplot delivers daily updated, client-ready visuals, helping you communicate market insights clearly and confidently.'
   const words = text.split(' ')
 
   return (
@@ -62,7 +62,7 @@ const ValueProposition: React.FC = () => {
         <span className='text-3xl font-medium leading-tight text-gray-500/40 md:text-4xl lg:text-5xl'>
           {words.map((word, index) => (
             <span
-              key={word}
+              key={`${word}-${index}`}
               id={`${word}-${index}`}
               className={index === 0 ? 'text-pink-800' : 'text-gray-500/40'}
             >

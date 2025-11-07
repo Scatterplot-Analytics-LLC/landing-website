@@ -1,19 +1,22 @@
 'use client'
 
-import { Instagram, Linkedin, X as XIcon, ArrowRight } from 'lucide-react'
+import {
+  Instagram,
+  Linkedin,
+  X as XIcon,
+  ArrowRight,
+  ArrowUpRight,
+} from 'lucide-react'
 import Image from 'next/image'
-import Script from 'next/script'
 import { useForm, ValidationError } from '@formspree/react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
-// Calendly type declaration
-interface Calendly {
-  initPopupWidget: (options: { url: string }) => void
-}
-
+// Declare Calendly type for TypeScript
 declare global {
   interface Window {
-    Calendly?: Calendly
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void
+    }
   }
 }
 
@@ -25,19 +28,14 @@ const Footer = () => {
     message: '',
   })
 
-  // Add Calendly CSS to document head
-  useEffect(() => {
-    const link = document.createElement('link')
-    link.href = 'https://assets.calendly.com/assets/external/widget.css'
-    link.rel = 'stylesheet'
-    document.head.appendChild(link)
-
-    return () => {
-      if (document.head.contains(link)) {
-        document.head.removeChild(link)
-      }
+  const handleCalendlyClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/spati-scatterplot/30min',
+      })
     }
-  }, [])
+  }
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -60,23 +58,8 @@ const Footer = () => {
     await handleSubmit(e)
   }
 
-  const handleBookDemo = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault()
-    if (typeof window !== 'undefined' && window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/spati-scatterplot/30min',
-      })
-    }
-  }
-
   return (
     <div className='relative bg-white'>
-      {/* Calendly Script */}
-      <Script
-        src='https://assets.calendly.com/assets/external/widget.js'
-        strategy='lazyOnload'
-      />
-
       {/* Contact Form Section */}
       <div className='absolute -top-40 left-1/2 z-20 hidden w-10/12 -translate-x-1/2 overflow-hidden rounded-3xl bg-palette-420 px-10 py-12 lg:block'>
         {/* Background overlays (kept within contact form via overflow-hidden) */}
@@ -98,18 +81,19 @@ const Footer = () => {
 
         <div className='relative z-10 flex items-start justify-between'>
           <div className='flex w-697 flex-col gap-3'>
-            <h2 className='text-56 font-medium leading-73 text-white md:text-4xl lg:text-7xl'>
-              Can&apos;t find a visual you want?
+            <h2 className='text-56 font-medium leading-73 text-white md:text-4xl lg:text-6xl'>
+              Curious how Scatterplot can help you?
             </h2>
             <p className='text-lg font-normal leading-27 text-palette-395'>
-              Share suggestions or topics you&apos;d love to see— by filling the
-              form or emailing at{' '}
-              <a
-                href='mailto:support@scatterplot.co'
-                className='font-medium text-white underline'
+              Contact us with any questions or feedback - we&apos;d love to hear
+              from you. You can also book a call with us here:{' '}
+              <button
+                type='button'
+                onClick={handleCalendlyClick}
+                className='inline-flex items-center font-medium text-white underline'
               >
-                support@scatterplot.co
-              </a>
+                Book a Demo <ArrowUpRight className='w-17 h-17' />
+              </button>
             </p>
           </div>
 
@@ -239,17 +223,18 @@ const Footer = () => {
         <div className='relative z-10 flex items-start justify-between gap-6'>
           <div className='flex w-1/2 flex-col gap-3'>
             <h2 className='text-4xl font-medium text-white md:text-56 md:leading-73 lg:text-7xl'>
-              Can&apos;t find a visual you want?
+              Curious how Scatterplot can help you?
             </h2>
             <p className='text-lg font-normal leading-27 text-palette-395'>
-              Share suggestions or topics you&apos;d love to see— by filling the
-              form or emailing at{' '}
-              <a
-                href='mailto:support@scatterplot.co'
-                className='font-medium text-white underline'
+              Contact us with any questions or feedback - we&apos;d love to hear
+              from you. You can also book a call with us here:
+              <button
+                type='button'
+                onClick={handleCalendlyClick}
+                className='inline-flex items-center font-medium text-white underline'
               >
-                support@scatterplot.co
-              </a>
+                Book a Demo <ArrowUpRight className='w-17 h-17' />
+              </button>
             </p>
           </div>
 
@@ -379,7 +364,7 @@ const Footer = () => {
             <div className='flex flex-col gap-1 text-sm font-normal leading-5 tracking-tight text-white/60'>
               <p>800 Westchester Avenue</p>
               <p>Rye Brook, NY 10573</p>
-              <p className='mt-2'>+1 408 123 4567</p>
+              <p className='mt-2'>+1 (914) 354 3363</p>
             </div>
           </div>
 
@@ -416,14 +401,14 @@ const Footer = () => {
                 With 50+ dynamic charts, customizable decks, your branding — you
                 can cancel anytime.
               </p>
-              <button className='mt-3 flex h-12 items-center justify-center rounded-lg bg-palette-360 px-6 py-4 text-base font-medium text-white transition-colors hover:bg-palette-370'>
-                Start 7-Day Free Trial
-              </button>
               <button
-                onClick={handleBookDemo}
-                className='flex h-12 items-center justify-center rounded-lg border border-white/30 bg-transparent px-6 py-4 text-base font-medium text-white transition-colors hover:bg-white/10'
+                onClick={() => {
+                  const base = process.env.NEXT_PUBLIC_REDIRECT_URL || ''
+                  window.location.href = `${base}/auth/signup`
+                }}
+                className='mt-3 flex h-12 items-center justify-center rounded-lg bg-palette-360 px-6 py-4 text-base font-medium text-white transition-colors hover:bg-palette-370'
               >
-                Book a Demo
+                Start 7-Day Free Trial
               </button>
             </div>
           </div>

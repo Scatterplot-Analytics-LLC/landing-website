@@ -1,14 +1,49 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
+import Script from 'next/script'
 import AnimatedButton from '@/src/components/homepage/AnimatedButton'
 import { Button } from '@/src/components/ui/button'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+// Calendly type declaration
+interface Calendly {
+  initPopupWidget: (options: { url: string }) => void
+}
+
+declare global {
+  interface Window {
+    Calendly?: Calendly
+  }
+}
+
 const HeroSection: React.FC = () => {
+  // Add Calendly CSS to document head
+  useEffect(() => {
+    const link = document.createElement('link')
+    link.href = 'https://assets.calendly.com/assets/external/widget.css'
+    link.rel = 'stylesheet'
+    document.head.appendChild(link)
+
+    return () => {
+      if (document.head.contains(link)) {
+        document.head.removeChild(link)
+      }
+    }
+  }, [])
+
+  const handleBookDemo = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    if (typeof window !== 'undefined' && window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/spati-scatterplot/30min',
+      })
+    }
+  }
+
   // Slides Animation in HeroSection
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -29,6 +64,11 @@ const HeroSection: React.FC = () => {
   })
   return (
     <div className='background-pinned-hero-section relative flex flex-col items-center overflow-hidden bg-palette-350'>
+      {/* Calendly Script */}
+      <Script
+        src='https://assets.calendly.com/assets/external/widget.js'
+        strategy='lazyOnload'
+      />
       {/* Background Vector */}
       <div className='pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 transform'>
         <Image
@@ -60,11 +100,11 @@ const HeroSection: React.FC = () => {
         <div className='flex flex-col items-center justify-start gap-4'>
           <div className='flex flex-col items-center justify-start gap-3'>
             <h1 className='m-0 max-w-4xl justify-start text-center text-6xl font-normal leading-tight text-palette-10'>
-              Build professional Investment decks, in minutes
+              Your dynamic library of visual investment insights.
             </h1>
             <div className='max-w-lg justify-start text-center text-lg font-normal leading-relaxed text-palette-10'>
-              Access expert slides on market and macro trends which are updated
-              daily and customizable to your brand.
+              Access expertly designed, daily-updated market and economy charts
+              and presentations tailored to your brand.
             </div>
           </div>
         </div>
@@ -81,17 +121,15 @@ const HeroSection: React.FC = () => {
           <Button
             variant='outline'
             className='border-palette-30 bg-palette-80 px-6 py-4 text-palette-200 hover:bg-palette-90 hover:text-palette-210'
-            onClick={() => {
-              window.location.href = '#features'
-            }}
+            onClick={handleBookDemo}
           >
-            <span className='text-sm font-medium'>Learn More</span>
+            <span className='text-sm font-medium'>Book Demo</span>
           </Button>
         </div>
       </div>
       <div className='measurement-div-1 relative z-10 flex w-full flex-col items-center justify-start overflow-hidden'>
         <Image
-          src='/ScreenOverlay.svg'
+          src='/screen-overlay.png'
           alt='Screen Overlay'
           width={0}
           height={0}
